@@ -57,6 +57,11 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# export api keys
+if [ -f "$HOME/.api_keys" ]; then
+    source "$HOME/.api_keys"
+fi
+
 # Aliases
 alias ls='ls --color'
 alias e='$EDITOR'

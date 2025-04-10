@@ -11,7 +11,7 @@ vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
-vim.keymap.set('v', '<C-S-c>', '"+y', { noremap = true, silent = true })
+vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, silent = true })
 
 
 vim.wo.number = true
